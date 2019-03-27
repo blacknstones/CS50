@@ -1,11 +1,12 @@
-//Height: 5
-//#
-//##
-//###
-//####
-//#####
+/*example:
+$ Height: 5
+#
+##
+###
+####
+#####*/
 #include <stdio.h>
-#include <cs50.h> //clang -o mario mario.c -lcs50
+#include <cs50.h> /*clang -o mario mario.c -lcs50*/
 int main(void)
 {
     int height;

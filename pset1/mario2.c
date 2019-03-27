@@ -1,9 +1,11 @@
-//Height: 5
-//    #
-//   ##
-//  ###
-// ####
-//#####
+/*Example:
+$ Height: 5
+    #
+   ##
+  ###
+ ####
+#####*/
+
 #include <cs50.h>
 #include <stdio.h>
 
