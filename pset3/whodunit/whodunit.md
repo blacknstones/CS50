@@ -2,6 +2,12 @@
 
  This is a program that filter out the red noise in a picture and reveal the hidden clue.
 
+The Clue picture looks like this:
+ ![Clue](clue.bmp)
+
+Clue revealed:
+![verdict](verdict.bmp)
+
 ## Bitmaps
 
  An image can be seen as a sequence of pixels, and every pixel is composed of certain bits. A file format (like BMP, JPEG or PNG) that supports "24-bit color" uses 24 bits per pixel, in which there are 8 bits of red, 8 bits of green and 8 bits of blue, and together they make up the color of a pixel.
