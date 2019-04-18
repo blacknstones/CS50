@@ -3,9 +3,11 @@
  This is a program that filter out the red noise in a picture and reveal the hidden clue.
 
 The Clue picture looks like this:
+
  ![Clue](clue.bmp)
 
 Clue revealed:
+
 ![verdict](verdict.bmp)
 
 ## Bitmaps
