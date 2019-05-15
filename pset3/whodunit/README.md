@@ -37,19 +37,24 @@ The attribute `packed` ensures that `clang` does not try to "word-align" members
 `whodunit2.c` uses bitwise operators. 
 
 **bitwise AND**:
-
+```
    45
  & 0f
-  
-  01000101
-& 00001111
-  --------
-= 00000101 = 5 
-      
+```
+
+```
+   01000101
+ & 00001111
+   --------
+ = 00000101 = 5 
+```
+
+```
    12345678
  & 000000ff
    --------
 =        78
+```
 
 **bitwise shift operator**:
- 01010111100011 >> 2
+` 01010111100011 >> 2`
