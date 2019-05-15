@@ -14,6 +14,19 @@ RGBTRIPLE new_triple(int bgr)
     return t;
 }
 
+// new_triple return a new triple created from bgr, which is
+// a 24-bit number in the format 0xBBGGRR.
+// 
+// in other words, the first 8 bits of bgr contains the blue color,
+// the second 8 bits the green color and the last (rightmost) bits
+// contains the red color.
+// 
+// Only blue:  11111111 00000000 00000000 = ff0000
+// Only green: 00000000 11111111 00000000 = 00ff00
+// Only red:   00000000 00000000 11111111 = 0000ff
+// 
+// Then you can combine these to create new colors :D
+
 int main(int argc, char *argv[])
 {
     // ensure proper usage
