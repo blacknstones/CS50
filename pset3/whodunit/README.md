@@ -10,7 +10,7 @@ After implemented `whodunit.c`, the clue is revealed. However, only some red noi
 
 ![verdict](verdict.bmp)
 
-`whodunit1.c` and `whodunit2.c` are developed to make the verdict more clear:
+`whodunit1.c` and `whodunit2.c` are developed to make the verdict more clear (and PINK!):
 
 ![verdict1](verdict1.bmp)
 
