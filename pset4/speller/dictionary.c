@@ -3,6 +3,9 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
 
 #include "dictionary.h"
 
@@ -22,6 +25,7 @@ node *hashtable[N];
 
 // set global variable
 int counter = 0;
+bool loaded;
 
 // Hashes word to a number between 0 and 25, inclusive, based on its first letter
 unsigned int hash(const char *word)
@@ -74,13 +78,14 @@ bool load(const char *dictionary)
     fclose(file);
 
     // Indicate success
+    loaded = true;
     return true;
 }
 
 // Returns number of words in dictionary if loaded else 0 if not yet loaded
 unsigned int size(void)
 {
-    if (load == true)
+    if (loaded)
     {
         return counter;
     }
@@ -119,6 +124,7 @@ bool unload(void)
             free(temp);
         }
     }
-    if
-    return false;
+
+    loaded = false;
+    return true;
 }
