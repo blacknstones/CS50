@@ -100,7 +100,7 @@ bool check(const char *word)
 
     while (cursor != NULL)
     {
-        // compare the
+        // compare without case sensitivity
         if (strcasecmp(cursor->word, word) == 0)
         {
             return true;
