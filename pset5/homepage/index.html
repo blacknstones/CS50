@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-        <title>My Webpage</title>
-    </head>
-    <body>
-        hello, homepage
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/homepage/image/white.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a60e7e5f2.js"></script>
+
+    <title>home-Yanwei Zhu</title>
+</head>
+
+<body>
+    <header class="page-header header container-fluid">
+        <div class="overlay">
+            <nav class="navbar">
+                <a class="navbar-brand" href="#">
+                    <img src="image/white.png" width="30" height="30" class="d-inline-block align-top" alt="Yanwei Zhu Logo"> Yanwei Zhu
+                </a>
+
+                <span class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+
+
+                <ul id="main-nav">
+                    <li>
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="hero-home">
+                <h1 class="hero-title">Hi, I'm Yanwei.</h1>
+                <p>A professional in Sociology and Gender Studies & a self-motivated programmer.</p>
+            </div>
+        </div>
+
+
+
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-content container-fluid">
+            <div>
+                <h3>Who am I?</h3>
+                <!-- <img id="avatar" src="../homepage/image/photo/avatar.jpg"> -->
+                <p>
+                    I'm a master's student in Social Studies of Gender with the main research interest in <strong>gender and technology</strong>, and a newbie of the coding world who are eager to learn new things.</p>
+                </p>
+            </div>
+            <div>
+                <h3>Technology is a medium of power.</h3>
+                <h5> – Cynthia Cockburn, <i>Machinery of Dominance</i>
+                </h5>
+                <p>To combine my interest in programming with my sociological research, I am currently working on a project focusing on immigrant female in Sweden who are learning to code. <br>It's a qualitative study which explores women's intersectional
+                    experience in the tech sector and the underrepresentation of women in this male-dominated field.
+                </p>
+            </div>
+
+            <div>
+                <h3>About this website</h3>
+                <p><a href="yanweizhu.com">yanweizhu.com</a> is part of my learning process of coding. I taught myself how to code a website from scratch using HTML, CSS, JavaScript and Bootstrap.<br>Currently I'm taking Harvard University's <a href="https://online-learning.harvard.edu/course/cs50-introduction-computer-science">CS50</a>                    as a entry to computer science.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <ul class="social-link">
+            <li>
+                <a href="https://github.com/blacknstones">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <a href="https://www.instagram.com/arduensam/?hl=en">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <li>
+                <a href="https://www.linkedin.com/in/yanwei-zhu-3972a917b/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="credits">
+            © 2019 Yanwei Zhu, all rights reserved. Made with <i class="fas fa-paw"></i>.
+        </div>
+    </footer>
+</body>
+
+
+
+<script>
+    let toggler = document.getElementById('nav-toggle');
+    let mainNav = document.getElementById('main-nav');
+
+    toggler.addEventListener('click', () => {
+        if (mainNav.style.display === 'none') {
+            mainNav.style.display = 'flex';
+        } else {
+            mainNav.style.display = 'none';
+        }
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>
